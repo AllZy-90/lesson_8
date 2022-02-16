@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson_8 - Polygon</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <header class="header">
+                <div class="block__header">
+                    <h1 class="header__title">
+                        Домашняя работа № 8
+                    </h1>
+                    <h2 class="header__sutitle">
+                        Псевдоклассы и Псевдоэлементы
+                    </h2>
+                </div>
+            </header>
+            <main class="main">
+                <div class="block__pseudo">
+                    <div class="block__pseudo-class">
+                        <h3 class="pseudo__class-title">
+                            Псевдоклассы
+                        </h3>
+                        <div class="block__first">
+                            <div class="pseudo__class hover">
+                                <h4 class="hover-title">
+                                    ":hover" - Срабатывает <span style="color:#8A3324;">при наведении</span> на
+                                    элемент
+                                </h4>
+                                <a class="pseudo__link hover-link" href="#">Lorem, ipsum dolor.</a>
+                                <p class="hover-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod molestiae
+                                    adipisci
+                                    deleniti deserunt autem nesciunt libero quisquam, eius, rerum numquam beatae
+                                    perferendis
+                                    dolore atque repellat maxime ut dolor?
+                                </p>
+                                <h4 class="hover-subtitle">
+                                    Часто применяется применяется как для ссылок, так и для любого другого
+                                    элемента
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="block__second">
+                            <div class="pseudo__class activ">
+                                <h4 class="activ-title">
+                                    ":active" - Срабатывает <span style="color:#8A3324;">при нажатии</span> на
+                                    элемент
+                                </h4>
+                                <a class="pseudo__link activ-link" href="#">Lorem, ipsum dolor.</a>
+                                <a class="pseudo__link activ-link-buttom" href="#">Lorem, ipsum dolor.</a>
+                                <h4 class="activ-subtitle">
+                                    В основном применяется к ссылкам и кнопкам
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="block__third">
+                            <div class="pseudo__class visited">
+                                <h4 class="visited-title">
+                                    ":visited" - Срабатывает <span style="color:#8A3324;">для посещенных
+                                        ссылок</span>
+                                </h4>
+                                <a class="pseudo__link visited-link" target="_blank" href="https://google.com">Lorem,
+                                    ipsum dolor.</a>
+                                <h4 class="visited-subtitle">
+                                    Из-за причин приватности, браузеры строго ограничивают стили
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="block__fourth">
+                            <div class="pseudo__class focus">
+                                <h4 class="focus-title">
+                                    ":focus" - Срабатывает <span style="color:#8A3324;">при получении элементом
+                                        фокуса</span>
+                                </h4>
+                                <a class="pseudo__link focus-link" href="#">Lorem, ipsum dolor.</a>
+                                <h4 class="focus-subtitle">
+                                    Часто применяется к елементам форм и прочим интерактивным объектам
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="block__fifth">
+                            <div class="pseudo__class target">
+                                <h4 class="target-title">
+                                    ":target" - Срабатывает когда <span style="color:#8A3324;">элемент является
+                                        объектом
+                                        на который ссылаются</span>
+                                </h4>
+                                <a class="pseudo__link target-link" href="#target">Нажми на меня</a>
+                                <p id="target" class="target-subtitle">
+                                    Я именно тот объект на который ссылается кнопка выше.
+                                    <span class="target-span">
+                                        Чтобы ты смог увидеть
+                                        как я
+                                        работаю, следует её нажать.
+                                    </span>
+                                </p>
+                                <p class="target-subtitle">
+                                    Пояснение: при срабатывании псевдокласса :target - появляется фон у
+                                    параграфа и
+                                    меняется его
+                                    цвет. Табличка "You are superstar!" - сделана с применением псевдоэлемента
+                                    "::after".
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block__pseudo-class pseudo-position">
+                        <h3 class="position-title">
+                            Псевдоклассы - положения в коде
+                        </h3>
+                        <div class="block__first last-indent">
+                            <h4 class="last-indent-title">
+                                Убераем последний отступ в блоке
+                            </h4>
+                            <h4>
+                                p:not(:last-child) {margin: 0px 0px 20px 0px;}
+                                задаём margin-bottom <span class="last-child" style="color: #8A3324;">для всех
+                                    параграфов, кроме последнего</span>
+                            </h4>
+                            <div class="pseudo__class position last-indent">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore nemo
+                                    autem
+                                    molestias
+                                    corrupti? Inventore nihil dolores odio placeat, corrupti officia rerum et!
+                                    Ut itaque
+                                    perferendis a delectus! Distinctio, nihil laudantium.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam mollitia
+                                    dolore
+                                    dicta aliquam error vero enim tenetur ea voluptatum facere fugiat, assumenda
+                                    placeat
+                                    a. Iure, enim impedit. Voluptas, at doloremque.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, fugit. Officiis
+                                    sint
+                                    fugit quae voluptatum mollitia aperiam nulla quia? Soluta, voluptatem! Non
+                                    quis
+                                    impedit ipsa cum earum dolorem beatae explicabo!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="block__second first-child">
+                            <h4 class="first-child-title">
+                                "p:first-child" - Обращение к <span style="color: #8A3324;">первому</span>
+                                параграфу в
+                                блоке. Меняем цвет шрифта.
+                            </h4>
+                            <div class="pseudo__class position first-child1">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium aut,
+                                    magnam
+                                    cupiditate unde, minima ducimus, modi ex deserunt corrupti dignissimos
+                                    asperiores
+                                    eaque maiores sequi nisi porro soluta quam ab molestiae.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, unde
+                                    consectetur.
+                                    Consectetur consequatur voluptatem amet voluptas quia placeat porro, magni
+                                    necessitatibus asperiores iure modi assumenda ex earum tempore sint.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis unde
+                                    temporibus,
+                                    itaque tempore facere eveniet cum culpa quasi. Ipsam maxime quo repudiandae
+                                    adipisci
+                                    tempore atque, voluptatum qui numquam laboriosam distinctio?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="block__third first-child">
+                            <h4 class="first-child-title">
+                                "*:first-child" - Обращение к <span style="color: #8A3324;">любому
+                                    первому</span>
+                                элементу в
+                                блоке. Задаём цвет фона, меняем цвет.
+                            </h4>
+                            <div class="pseudo__class position first-child2">
+                                <a href="#">Lorem ipsum dolor sit amet.</a>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, unde
+                                    consectetur.
+                                    Consectetur consequatur voluptatem amet voluptas quia placeat porro, magni
+                                    necessitatibus asperiores iure modi assumenda ex earum tempore sint.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis unde
+                                    temporibus,
+                                    itaque tempore facere eveniet cum culpa quasi. Ipsam maxime quo repudiandae
+                                    adipisci
+                                    tempore atque, voluptatum qui numquam laboriosam distinctio?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="block__fourth last-child">
+                            <h4 class="last-child-title">
+                                "p:last-of-type" - Обращение к <span style="color: #8A3324;">последнему</span>
+                                элементу в
+                                блоке по типу. Меняем фон, задаем padding.
+                            </h4>
+                            <div class="pseudo__class position last-child">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id aliquid quo
+                                    vitae ea
+                                    doloremque recusandae fuga, delectus quae non aliquam blanditiis sit maxime
+                                    quam
+                                    necessitatibus temporibus consequuntur voluptates, at quibusdam!
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, unde
+                                    consectetur.
+                                    Consectetur consequatur voluptatem amet voluptas quia placeat porro, magni
+                                    necessitatibus asperiores iure modi assumenda ex earum tempore sint.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis unde
+                                    temporibus,
+                                    itaque tempore facere eveniet cum culpa quasi. Ipsam maxime quo repudiandae
+                                    adipisci
+                                    tempore atque, voluptatum qui numquam laboriosam distinctio?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="block__fifth nth-child">
+                            <h4 class="nth-child-title1">
+                                ":nth-child" - Обращение к <span style="color: #8A3324;">конкретным
+                                    элементам</span>
+                                в блоке
+                            </h4>
+                            <h4 class="nth-child-title2">
+                                p:nth-child(2) - обратимся к второму параграфу и изменим для него оформление
+                            </h4>
+                            <div class="pseudo__class position nth-child1">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id aliquid quo
+                                    vitae ea
+                                    doloremque recusandae fuga, delectus quae non aliquam blanditiis sit maxime
+                                    quam
+                                    necessitatibus temporibus consequuntur voluptates, at quibusdam!
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, unde
+                                    consectetur.
+                                    Consectetur consequatur voluptatem amet voluptas quia placeat porro, magni
+                                    necessitatibus asperiores iure modi assumenda ex earum tempore sint.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis unde
+                                    temporibus,
+                                    itaque tempore facere eveniet cum culpa quasi. Ipsam maxime quo repudiandae
+                                    adipisci
+                                    tempore atque, voluptatum qui numquam laboriosam distinctio?
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore aperiam
+                                    voluptates quis! Quis illo eius corrupti facere ipsam nisi ut dolores neque
+                                    accusamus eveniet! Fugiat impedit quos quis animi necessitatibus.
+                                </p>
+                            </div>
+                            <h4 class="nth-child-title padding-t-20px">
+                                p:nth-child(odd) - обратимся ко всем нечетным параграфам и изменим для них
+                                оформление
+                            </h4>
+                            <div class="pseudo__class position nth-child2">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id aliquid quo
+                                    vitae ea
+                                    doloremque recusandae fuga, delectus quae non aliquam blanditiis sit maxime
+                                    quam
+                                    necessitatibus temporibus consequuntur voluptates, at quibusdam!
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, unde
+                                    consectetur.
+                                    Consectetur consequatur voluptatem amet voluptas quia placeat porro, magni
+                                    necessitatibus asperiores iure modi assumenda ex earum tempore sint.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis unde
+                                    temporibus,
+                                    itaque tempore facere eveniet cum culpa quasi. Ipsam maxime quo repudiandae
+                                    adipisci
+                                    tempore atque, voluptatum qui numquam laboriosam distinctio?
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore aperiam
+                                    voluptates quis! Quis illo eius corrupti facere ipsam nisi ut dolores neque
+                                    accusamus eveniet! Fugiat impedit quos quis animi necessitatibus.
+                                </p>
+                            </div>
+                            <h4 class="nth-child-title padding-t-20px">
+                                p:nth-child(even) - обратимся ко всем четным параграфам и изменим для них
+                                оформление
+                            </h4>
+                            <div class="pseudo__class position nth-child3">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id aliquid quo
+                                    vitae ea
+                                    doloremque recusandae fuga, delectus quae non aliquam blanditiis sit maxime
+                                    quam
+                                    necessitatibus temporibus consequuntur voluptates, at quibusdam!
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, unde
+                                    consectetur.
+                                    Consectetur consequatur voluptatem amet voluptas quia placeat porro, magni
+                                    necessitatibus asperiores iure modi assumenda ex earum tempore sint.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis unde
+                                    temporibus,
+                                    itaque tempore facere eveniet cum culpa quasi. Ipsam maxime quo repudiandae
+                                    adipisci
+                                    tempore atque, voluptatum qui numquam laboriosam distinctio?
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore aperiam
+                                    voluptates quis! Quis illo eius corrupti facere ipsam nisi ut dolores neque
+                                    accusamus eveniet! Fugiat impedit quos quis animi necessitatibus.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block__pseudo-element">
+                        <h3 class="pseudo__element-title">
+                            Псевдоэлементы:
+                        </h3>
+                        <div class="block__first">
+                            <h4 class="first-line-title">
+                                "::first-line" задает стиль
+                                первой строки текста
+                            </h4>
+                            <div class="pseudo-element first-line">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt fugit id, quis
+                                delectus quod quas praesentium quasi atque fugiat consequatur iusto ratione
+                                nostrum odio
+                                maiores a labore cupiditate tenetur. Quaerat!
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi esse magni
+                                possimus
+                                culpa fugit quo labore cum modi porro, eligendi unde sed voluptatem libero
+                                deleniti.
+                                Libero harum veniam optio pariatur?
+                            </div>
+                        </div>
+                        <div class="block__second">
+                            <h4 class="first-letter-title">
+                                "::first-letter" определяет стиль
+                                первого символа в тексте
+                            </h4>
+                            <div class="pseudo-element first-letter">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, dolores
+                                consequuntur!
+                                Libero adipisci dignissimos laboriosam debitis nemo cum veritatis sunt id
+                                nostrum,
+                                dolorum minus hic corrupti deleniti a vitae dicta.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium hic quia
+                                sequi
+                                perferendis, tenetur illo. Consectetur eos temporibus quae, adipisci blanditiis
+                                neque
+                                debitis excepturi porro, repellendus unde doloremque quas quos!
+                            </div>
+                        </div>
+                        <div class="block__third">
+                            <h4 class="before-title">
+                                "::before" Добавление контента до содержимого объекта
+                            </h4>
+                            <div class="pseudo-element before">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, dolores
+                                consequuntur!
+                                Libero adipisci dignissimos laboriosam debitis nemo cum veritatis sunt id
+                                nostrum,
+                                dolorum minus hic corrupti deleniti a vitae dicta.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium hic quia
+                                sequi
+                                perferendis, tenetur illo. Consectetur eos temporibus quae, adipisci blanditiis
+                                neque
+                                debitis excepturi porro, repellendus unde doloremque quas quos!
+                            </div>
+                        </div>
+                        <div class="block__fourth pseudo__after">
+                            <h4 class="after-title">
+                                "::after" Добавление контента после содержимого объекта
+                            </h4>
+                            <div class="pseudo-element after">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, dolores
+                                consequuntur!
+                                Libero adipisci dignissimos laboriosam debitis nemo cum veritatis sunt id
+                                nostrum,
+                                dolorum minus hic corrupti deleniti a vitae dicta.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium hic quia
+                                sequi
+                                perferendis, tenetur illo. Consectetur eos temporibus quae, adipisci blanditiis
+                                neque
+                                debitis excepturi porro, repellendus unde doloremque quas quos!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer">
+
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
