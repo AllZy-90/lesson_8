@@ -39,6 +39,9 @@ body {
     rgba(102, 102, 102, 0.4948573179271709) 100%
   );
 }
+.main {
+  margin: 0px 0px 30px 0px;
+}
 /* =============================HEADER================================= */
 .header {
   margin: 0px 0px 30px 0px;
@@ -358,3 +361,21 @@ body {
   background: url("../img/check.png") center / 30px no-repeat;
 }
 /* ============================FOOTER==================================== */
+.author {
+  font-family: "SiennaRegular";
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px 0 #000;
+  background: url("../img/background-header.jpeg") center / cover no-repeat;
+  color: #fff;
+}
+.author::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 30%;
+  margin: 5px 0px 0px 35%;
+  background-color: #ffcc00;
+}
